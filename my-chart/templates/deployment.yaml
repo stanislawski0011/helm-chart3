@@ -17,7 +17,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config: {{ .Values.configMap.config.json | sha256sum }}
+        checksum/config: {{ get .Values.configMap "config.json" | default "{}" | quote | sha256sum }}
         checksum/secret: {{ include (print .Template.BasePath "/secret.yaml") . | sha256sum }}
       labels:
         {{- include "my-chart.selectorLabels" . | nindent 8 }}

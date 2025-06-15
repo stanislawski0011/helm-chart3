@@ -5,4 +5,5 @@ metadata:
   labels:
     {{- include "my-chart.labels" . | nindent 4 }}
 data:
-  config.json: {{ .Values.configMap.config.json | quote }}
+  config.json: |-
+{{ get .Values.configMap "config.json" | indent 4 }}
