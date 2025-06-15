@@ -3,6 +3,21 @@ entries:
   my-chart:
   - apiVersion: v2
     appVersion: 1.0.1
+    created: "2025-06-15T21:07:27.443649736Z"
+    description: A Helm chart for Kubernetes
+    digest: 168c10c569fdcc3dcded08ce37e541bee99420b0aaddd8a0eba6170b8c19d13b
+    keywords:
+    - inpost
+    - assessment
+    maintainers:
+    - name: DevOps Team
+    name: my-chart
+    type: application
+    urls:
+    - https://github.com/stanislawski0011/helm-chart3/releases/download/my-chart-0.6.0/my-chart-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    appVersion: 1.0.1
     created: "2025-06-15T17:23:01.989826876Z"
     description: A Helm chart for Kubernetes
     digest: 770f7de68125b17c25a963e1824eb569cdd842513ac1535d59f708f876e559cd
@@ -71,4 +86,4 @@ entries:
     urls:
     - https://github.com/stanislawski0011/helm-chart3/releases/download/my-chart-0.1.0/my-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-15T17:23:01.989847505Z"
+generated: "2025-06-15T21:07:27.443680703Z"
